@@ -5,12 +5,11 @@ name: Python package
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
+
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '0 4 * * *'
 
 jobs:
   build:
